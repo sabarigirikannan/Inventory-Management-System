@@ -3,12 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory Management</title>
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/css/input.css"> -->
     <link rel="stylesheet" href="/css/output.css">
 </head>
-<body>
+<body class="mx-auto border border-b-2 max-w-full">
+    <header class="">
+        <h1 class="text-center p-4 bg-blue-500  text-yellow-50 text-3xl font-semibold">Inventory Managenment System</h1>
+    </header>
+        <main class="max-w-auto ">
+            <nav class="flex justify-around m-4 text-lg font-semibold text-blue-500 ">
+                <a href="#manage-prduct" class="hover:underline">Product</a>
+                <a href="#manage-location" class="hover:underline">Location</a>
+                <a href="#manage-product-movement" class="hover:underline">Product Movement</a>
+                <a href="#manage-product-report" class="hover:underline">Report</a>
+            </nav>
+
+
+            <section id="manage-prduct">
+                <h2 class="m-4 text-lg font-semibold">Manage Products</h2>
+                <form name="product">
+
+                    <div class="border border-b-2 p-4 space-y-4 m-4 shadow-lg">
+                        <div >
+
+                            <label class="text-sm font-medium block mb-4">Product Name</label>
+                            <input type="text" class="border border-b-2 rounded p-2 w-full  outline-none lg:w-2/5 text-sm " placeholder="Enter Producr name"/>
+                        </div>
+                        <div>
+
+                            <label class="text-sm font-medium block mb-4">Price</label>
+                            <input type="text" class="border border-b-2 rounded p-2 w-full  outline-none lg:w-2/5 text-" placeholder="Enter price"/>
+                        </div>
+                        <button type="submit" class="bg-blue-500 px-7 py-2 rounded font-semibold hover:bg-blue-600 text-yellow-50">Save Product</button>
+                        
+                    </div>
+                </form>
+                
+            </section>
+
+            <section id="manage-location">
+                <h2 class="m-4 text-lg font-semibold">Manage Location</h2>
+                <form name="location-name">
+
+                    <div class="border border-b-2 p-4 space-y-4 m-4 shadow-lg">
+                        <div >
+
+                            <label class="text-sm font-medium block mb-4">Location Name</label>
+                            <input type="text" class="border border-b-2 rounded p-2 w-full outline-none lg:w-2/5 text-" placeholder="Enter Location name"/>
+                        </div>
+                        
+                        <button type="submit" class="bg-blue-500 px-7 py-2 rounded font-semibold hover:bg-blue-600 text-yellow-50">Save Location</button>
+                        
+                    </div>
+                </form>
+                
+            </section>
+
+            <section id="manage-product-movement">
+                <h2 class="m-4 text-lg font-semibold">Manage Product Movement</h2>
+                <form name="product-movement">
+
+                    <div class="border border-b-2 p-4 space-y-4 m-4 shadow-lg">
+                        <div >
+
+                            <label class="text-sm font-medium block mb-4">Product</label>
+                            <select name="" id="" class=" border border-b-2 rounded p-2 w-full  outline-none lg:w-2/5 text-s" aria-placeholder="Select the product...">
+                                <option value="#">Select the product...</option>
+                                <option value="Product A">Product A</option>
+                                <option value="Product B">Product B</option>
+                            </select>
+                        </div>
+
+                        <div >
+
+                            <label class="text-sm font-medium block mb-4">From Location</label>
+                            <select name="" id="" class=" border border-b-2 rounded p-2 w-full  outline-none lg:w-2/5 text-s" aria-placeholder="Select the product...">
+                                <option value="#">Select From Location</option>
+                                <option value="Warehouse A">Warehouse A</option>
+                                <option value="Warehouse B">Warehouse B</option>
+                            </select>
+                        </div>
+
+                        <div >
+
+                            <label class="text-sm font-medium block mb-4">Product</label>
+                            <select name="" id="" class=" border border-b-2 rounded p-2 w-full  outline-none lg:w-2/5 text-s" aria-placeholder="Select the product...">
+                                <option value="#">Select To location</option>
+                                <option value="Warehouse A">Warehouse A</option>
+                                <option value="Warehouse B">Warehouse B</option>
+                            </select>
+                        </div>
+                        
+
+                        <div >
+
+                            <label class="text-sm font-medium block mb-4">Quatity</label>
+                            <input type="text" class="border border-b-2 rounded p-2 w-full  outline-none lg:w-2/5 text-" placeholder="Enter quatity"/>
+                        </div>
+                        <button type="submit" class="bg-blue-500 px-7 py-2 rounded font-semibold hover:bg-blue-600 text-yellow-50">Save Movement</button>
+                        
+                    </div>
+                </form>
+                
+            </section>
+
+            <section id="manage-product-report">
+                <h2 class="m-4 text-lg font-semibold">Product Balance Report</h2>
+                
+
+                   
+                        <div class="border border-b-2  space-y-4 m-4 shadow-lg">
+
+                            <table class="w-full text-left">
+                                <thead class=" text-yellow-50 bg-blue-500 w-full">
+                                    <th class="p-2">Product</th>
+                                    <th class="p-2">Location</th>
+                                    <th class="p-2">Quantity</th>
+                                </thead>
+                                <tbody>
+                                    <tr class="border border-b-1">
+
+                                        <td class="p-2">Product A</td>
+                                        <td class="p-2">Warehouse A</td>
+                                        <td class="p-2">50</td>
+                                    </tr>
+                                    <tr class="border border-b-1">
+
+                                        <td class="p-2">Product B</td>
+                                        <td class="p-2">Warehouse B</td>
+                                        <td class="p-2">30</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                
+                
+            </section>
+
+        </main>
    
-        
-    
+   
 </body>
 </html>
